@@ -4,7 +4,7 @@ from flask import Flask
 application = Flask(__name__)
 
 @application.route('/', methods=['GET'])
-def get_athlete_history():
+def server_status():
     return {"operation": "success",
             "server_status": "operational"
             }
